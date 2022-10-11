@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Опрос</title>
+    </head>
+    <body>
+        <h1>Опрос для обладателей котиков</h1>
+        <form>
+            <fieldset>
+                <legend>Имя</legend>
+                    <div>
+                        <label for="petname">Имя питомца</label>
+                        <input type="text" id="petname"/>
+                    </div>
+                    <div>
+                        <label for="ownername">Имя владельца</label>
+                        <input type="text" id="ownername"/>
+                    </div>
+                    <div>
+                        <label for="ownercont">Контакты владельца</label>
+                        <input type="text" id="ownercont"/>
+                    </div>
+            </fieldset><br />
+            <div>
+                Выберите породу
+            </div>
+            <div> 
+                <select>
+                    <option value="1">Британец</option>
+                    <option value="2">Сфинкс</option>
+                    <option value="2">Дворняга</option>
+                </select>
+            </div><br />
+            <div>
+                Чем питается?
+            </div>
+            <div> 
+                <input type="checkbox" id="dryfeed" value="dryfeed"/>
+                <label for="dryfeed">Сухой корм</label>
+            </div>
+            <div> 
+                <input type="checkbox" id="wetfeed" value="wetfeed"/>
+                <label for="wetfeed">Влажный корм</label>
+            </div>
+            <div> 
+                <input type="checkbox" id="naturalfeed" value="naturalfeed"/>
+                <label for="naturalfeed">Натуральный корм</label>
+            </div><br />
+            <div>
+                Пол питоца
+            </div>
+            <div> 
+                <input type="radio" name="sex" id="male" value="male"/>
+                <label for="male">Самец</label>
+            </div>
+            <div> 
+                <input type="radio" name="sex" id="female" value="female"/>
+                <label for="female">Самка</label>
+            </div><br />
+            <div>
+                Комментарий
+            </div>
+            <div>
+                <textarea rows="5" placeholder="Дополнительную информацию можете написать тут"></textarea>
+            </div><br />
+            <div>
+                Можете добавить фотографию питомца
+                <input type="file" />
+            </div><br />
+        </form>   
+        <div>
+            <button>Сохранить</button>
+        </div>
+        
+    </body>
+</html>
